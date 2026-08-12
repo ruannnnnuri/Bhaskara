@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bhaskara.MainPage"
+             Title="Bhaskara">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="10" Spacing="5">
+            <Image Source="bhaskaraf.png" Aspect="Center"/>
+
+            <Label Text="Digite os valores:"/>
+            <HorizontalStackLayout>
+                <Label Text="a: "/>
+                <Entry x:Name="valueA" Placeholder="A" Keyboard="Numeric"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Label Text="b: "/>
+                <Entry x:Name="valueB" Placeholder="B" Keyboard="Numeric"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <Label Text="c: "/>
+                <Entry x:Name="valueC" Placeholder="C" Keyboard="Numeric"/>
+            </HorizontalStackLayout>
+
+            <Button x:Name="btCalcularRaizes" Text="Calcular Raízes" HorizontalOptions="Fill" Clicked="btCalcularRaizes_Clicked"/>
+
+            <Label x:Name="lbResultado" Text="Resultado: " FontSize="20" FontAttributes="Bold"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
