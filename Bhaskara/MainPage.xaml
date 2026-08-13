@@ -5,26 +5,22 @@
              Title="Bhaskara">
 
     <ScrollView>
-        <VerticalStackLayout Padding="10" Spacing="5">
+        <VerticalStackLayout Padding="10" Spacing="30">
             <Image Source="bhaskaraf.png" Aspect="Center"/>
 
             <Label Text="Digite os valores:"/>
-            <HorizontalStackLayout>
-                <Label Text="a: "/>
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center" VerticalOptions="Center" >
+                <Label Text="a: " VerticalOptions="Center"/>
                 <Entry x:Name="valueA" Placeholder="A" Keyboard="Numeric"/>
-            </HorizontalStackLayout>
-            <HorizontalStackLayout>
-                <Label Text="b: "/>
+                <Label Text="b: " VerticalOptions="Center"/>
                 <Entry x:Name="valueB" Placeholder="B" Keyboard="Numeric"/>
-            </HorizontalStackLayout>
-            <HorizontalStackLayout>
-                <Label Text="c: "/>
+                <Label Text="c: " VerticalOptions="Center"/>
                 <Entry x:Name="valueC" Placeholder="C" Keyboard="Numeric"/>
             </HorizontalStackLayout>
 
-            <Button x:Name="btCalcularRaizes" Text="Calcular Raízes" HorizontalOptions="Fill" Clicked="btCalcularRaizes_Clicked"/>
+            <Button x:Name="btCalcularRaizes" Text="Calcular Raízes" HorizontalOptions="Fill" Clicked="btCalcularRaizes_Clicked" BackgroundColor="Black"/>
 
-            <Label x:Name="lbResultado" Text="Resultado: " FontSize="20" FontAttributes="Bold"/>
+            <Label x:Name="lbResultado" Text=" " FontSize="20" FontAttributes="Bold" HorizontalOptions="Center"/>
 
         </VerticalStackLayout>
     </ScrollView>
